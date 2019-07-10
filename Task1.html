@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+<title> Task </title></head>
+<body>
+	<nav align="center">
+		<a href="#abc">Home</a> /
+		<a href="#abd">AboutUs</a> /
+		<a href="#abe">ContactUs</a>
+	
+		<p id="abc"></p><p><img src="images/o.png" height="750px" width="750px">
+		<img src="images/o.png" height="250px" width="250px">
+	<img src="images/o1.jpg" height="250px" width="250px">
+<img src="images/o2.png" height="250px" width="250px">
+		<p id="abd"></p>
+			<p>Published with the authorization of Microsoft Corporation by:
+O’Reilly Media, Inc.
+1005 Gravenstein Highway North
+Sebastopol, California 95472
+Copyright © 2011 Faithe Wempen
+Complying with all applicable copyright laws is the responsibility of the user. All rights reserved. Without limiting the rights
+under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted
+in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without
+express written permission of O’Reilly Media, Inc.
+Printed and bound in Canada.
+2 3 4 5 6 7 8 9 10 11 TG 6 5 4 3 2 1
+Microsoft Press titles may be purchased for educational, business or sales promotional use. Online editions are also available
+for most titles (http://my.safaribooksonline.com). For more information, contact our corporate/institutional sales department:
+(800) 998-9938 or corporate@oreilly.com. Visit our website at microsoftpress.oreilly.com. Send comments to mspinput@
+microsoft.com.
+Microsoft, Microsoft Press, ActiveX, Excel, FrontPage, Internet Explorer, PowerPoint, SharePoint, Webdings, Windows,
+and Windows 7 are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other
+countries. Other product and company names mentioned herein may be the trademarks of their respective owners.
+Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people,
+places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain
+name, e-mail address, logo, person, place, or event is intended or should be inferred.
+This book expresses the author’s views and opinions. The information contained in this book is provided without any express, statutory, or implied warranties. Neither the author, O’Reilly Media, Inc., Microsoft Corporation, nor their respective
+resellers or distributors, will be held liable for any damages caused or alleged to be caused either directly or indirectly by
+such information.
+Acquisitions and Development Editors: Russell Jones and Kim Spilker
+Production Editor: Kristen Borg
+Production Services: Octal Publishing, Inc.
+Technical Reviewer: Joydip Kanjilal
+Indexing: Lucie Haskins
+Cover: Karen Montgomery
+Compositor: Octal Publishing, Inc.
+Illustrator: Robert Romano
+978-0-735-64526-4
+Fmatter.indd 2 2/1/11 11:57 AM
+iii
+To Margaret
+HTML5_SBS.indb 3 1/13/11 5:05 PM
+HTML5_SBS.indb 4 1/13/11 5:05 PM
+   v
+What do you think of this book? We want to hear from you!
+Microsoft is interested in hearing your feedback so we can continually improve our books and learning resources
+for you. To participate in a brief online survey, please visit:
+microsoft.com/learning/booksurvey
+Contents
+Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xiii
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xv
+What Is HTML? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xix
+Understanding HTML Tags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xix
+Understanding Cascading Style Sheets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxi
+Why Learn HTML in Notepad? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxi
+Choosing an HTML Version . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxii
+Why Code in HTML5? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxiii
+Minimum System Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxiv
+Using the Practice Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxv
+Getting Help . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxviii
+Conventions and Features in This Book . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxix
+What Next? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . xxx
+Part 1 Getting Started with HTML
+1 Editing and Viewing HTML Files 3
+Opening a Web Page in Notepad . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Adding the Data File Location to the Favorites List . . . . . . . . . . . . . . . . . . . . . . . 5
+Opening a File from Windows Explorer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Previewing a Web Page in a Web Browser . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Making, Saving, and Viewing Changes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+HTML5_SBS.indb 5 1/13/11 5:05 PM
+vi  Contents
+2 Setting Up the Document Structure 13
+Specifying the Document Type . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Creating the HTML, Head, and Body Sections . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Creating Paragraphs and Line Breaks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Specifying a Page Title and Metatags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Publishing a File to a Server . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+3 Formatting Text by Using Tags 25
+Creating Headings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Applying Bold and Italic Formatting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Applying Superscript and Subscript Formatting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Using Monospace and Preformatted Text . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Formatting a Block Quotation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Configuring View Settings in Internet Explorer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+4 Using Lists and Backgrounds 47
+Creating Bulleted and Numbered Lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Nesting Lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Changing the Bullet or Number Character . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Specifying the Start of a Numbered List . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Creating Definition Lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Inserting Special Characters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Inserting Horizontal Lines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Choosing Background and Foreground Colors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Specifying Colors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+Applying a Background Color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Applying a Foreground Color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Specifying a Background Image File . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+5 Creating Hyperlinks and Anchors 67
+Hyperlinking to a Web Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Using Partial Paths and Filenames . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+Using Relative and Absolute Paths . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+Setting a Target Window . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+HTML5_SBS.indb 6 1/13/11 5:05 PM
+Contents  vii
+Hyperlinking to an E-Mail Address . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+Creating and Hyperlinking to Anchors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+Hyperlinking to Other Content . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+Part 2 Style Sheets and Graphics
+6 Introduction to Style Sheets 85
+Understanding Styles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+Constructing Style Rules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+Creating Styles for Nested Tags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+Creating Classes and IDs for Applying Styles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+Applying Styles to Hyperlinks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+Creating and Linking to External Style Sheets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100
+7 Formatting Text by Using Style Sheets 103
+Specifying a Font Family . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Specifying a Font Size and Color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+Applying Bold and Italics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+Applying Strikethrough and Underlining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+Creating Inline Spans . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+Adjusting Spacing Between Letters . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+8 Formatting Paragraphs by Using Style Sheets 125
+Indenting Paragraphs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+Applying a Border to a Paragraph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+Specifying a Border Style . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+Setting Border Padding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131
+Specifying Border Width and Color . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 131
+Formatting Border Sides Individually . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+Setting All Border Attributes at Once . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Specifying the Horizontal Alignment of a Paragraph . . . . . . . . . . . . . . . . . . . . . . . . 135
+Specifying Vertical Space within a Paragraph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+Key Points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+HTML5_SBS.indb 7 1/13/11 5:05 PM
+viii  Contents
+9 Displaying Graphics 141
+Selecting a Graphics Format . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+Preparing Graphics for Web Use . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+Inserting Graphics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Arranging Elements on the Page . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+Controlling Image Size and Padding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+Hyperlinking from Graphics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+Using Thumbnail Graphics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 155
+</p>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60886.13732992529!2d78.36972632067177!3d17.48919338241556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ec0162f43d%3A0x3288c6fe4358cf48!2z4LCV4LGB4LCV4LCf4LGN4LCq4LCy4LGN4LCy4LC_LCDgsLngsYjgsKbgsLDgsL7gsKzgsL7gsKbgsY0sIOCwpOCxhuCwsuCwguCwl-CwvuCwow!5e0!3m2!1ste!2sin!4v1562434508431!5m2!1ste!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<p id="abe"></p>
+</div><form>
+<div>Name:<input type="text"></div>
+<div>Phone nUmber:<input type="text"></div>
+<div>Surname:<input type="text">
+</div>
+<div>Second Name:<input type="text"></div>
+<div> Middle Name:<input type="text"></div>
+<div>EmailId:<input type="text"></div>
+<h1 align="center">&copy;Copy Right You'r Name</h1> </form>
+</div>
+
+
+</body>
+</html/>
